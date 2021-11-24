@@ -1,0 +1,70 @@
+/* Ejercicio de separar grilla */
+
+
+.contenedor {
+
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+    gap: 20px;
+
+
+}
+
+
+
+.item {
+    border: 5px solid #00bcd4;
+    font-size: 4rem;
+    background-color: rgb(35, 71, 144);
+}
+
+
+/* Termina ejercicio de grilla */
+
+
+/* Ejercicio de alineacion */
+
+
+
+.contenedor-alineacion {
+    
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 150px 150px 150px;
+    grid-auto-rows: 150px;
+    height: 600px;
+    /* justify-content: center;
+    align-content: center; */
+    place-content: center;
+    justify-items: end;
+    align-items: start;
+}
+
+/* justify-content: center; nos ayuda a centrar horizontalmente nuestra grilla --- */
+/* align-content: center; nos ayuda a centrar verticalmente nuestra grilla ||| */
+/* place-content:center; nos ayuda a aplicar de maneja conjunta el centrado tanto vertical como horizontal en una sola linea de codigo */
+/* justify-items:end;  nos ayuda a mover el elemento de la grilla al final de su propia grilla o celda de manera horizontal |||*/
+/* align-items:start;  nos ayuda a mover el elemento de la grilla al inicio de su propia grilla o celda de manera vertical ---- */
+
+.item-alineacion {
+    border: 5px solid #00bcd4;
+    font-size: 4rem;
+    background-color: gray;
+}
+
+#id2{
+
+    justify-self: start;
+    align-self: end;
+}
+
+
+
+/* Termina ejercicio de alineacion */

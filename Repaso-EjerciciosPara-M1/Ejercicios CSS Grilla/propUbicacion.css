@@ -1,0 +1,46 @@
+.contenedor {
+
+    border: 5px solid #e1bee7;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 75px 75px 75px;
+    /*filas*/
+    grid-template-columns: 150px 150px 150px;
+    /*Columnas*/
+    place-content: center;
+    /* centra en horizontal || */
+    /* Aca otra manera de hacer lo comentado de posiciones */
+    grid-template-areas:
+        "header header header"
+        "side main main"
+        "side main main";
+}
+
+
+/* Para diferenciar items se colorean de diferente manera */
+
+
+.item-1 {
+    border: 5px solid #f8bbd0;
+    background-color: #ffeeff;
+    /* grid-column-start: 1;
+    grid-column-end: 4;    */
+    grid-area: header;
+
+}
+
+.item-2 {
+
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    /* grid-row: 2 / 4; */
+    grid-area: side;
+}
+
+.item-3 {
+    border: 5px solid #b2ebf2;
+    background-color: #e5ffff;
+    /* grid-area: 2 / 2 / 4 / 4 ; */
+    /* este ultimo se coloca primero la fila donde comienza y luego la columna donde comienza y se repite para el fin */
+    grid-area: main;
+}
