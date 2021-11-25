@@ -1,0 +1,10 @@
+*{
+    /* Roboto viene por default en los navegadores */
+    font-family: 'Roboto', sans-serif;  
+}
+
+main{
+    /* Valor maximo de ancho y que no tenga margenes ni arriba ni abajo */
+    max-width: 1200px;
+    margin: 0 auto;
+}
